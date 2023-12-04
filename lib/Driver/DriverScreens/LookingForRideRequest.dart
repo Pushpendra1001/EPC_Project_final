@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:epc/Driver/DriverScreens/RequestRides.dart';
 import 'package:epc/screens/BottomSliders/foundRide.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LookingForRequestRide extends StatefulWidget {
@@ -45,11 +46,28 @@ class LookingForRequestRideState extends State<LookingForRequestRide> {
               ),
               const Text("Looking For Request Ride...",
                   style: TextStyle(fontSize: 24)),
-              ElevatedButton(
-                child: const Text("Cancel"),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
+              Center(
+                child: ClipRRect(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color.fromARGB(255, 2, 26, 62),
+                        fixedSize: const Size(150, 50),
+                        shape: const RoundedRectangleBorder(
+                            side: BorderSide(color: Colors.black),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(16)))),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Text(
+                      "Cancel",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    ),
+                  ),
+                ),
               ),
               const SizedBox(
                 height: 10,

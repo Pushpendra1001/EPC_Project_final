@@ -6,17 +6,13 @@ class AppModeProvider extends ChangeNotifier {
   bool get appMode => AppMode;
 
   void ChangeToPassenger() {
-    if (appMode == true) {
-      AppMode = true;
-      notifyListeners();
-    }
+    AppMode = true;
+    notifyListeners();
   }
 
   void ChangeToDriver() {
-    if (appMode == false) {
-      AppMode = false;
-      notifyListeners();
-    }
+    AppMode = false;
+    notifyListeners();
   }
 
   void ChangeMode() {

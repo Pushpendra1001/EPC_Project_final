@@ -8,6 +8,7 @@ import 'package:epc/screens/BottomSliders/RideHistoryScreen.dart';
 import 'package:epc/screens/BottomSliders/foundRide.dart';
 import 'package:epc/screens/BottomSliders/searchRide.dart';
 import 'package:epc/screens/CommingSoon.dart';
+import 'package:epc/screens/MainScreens/RateYourRide.dart';
 import 'package:epc/screens/MainScreens/SettingScreen.dart';
 import 'package:epc/screens/PaymentScreens/mywallet.dart';
 import 'package:epc/screens/PaymentScreens/wallet_addmoney.dart';
@@ -157,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const CommingSoon(),
+                          builder: (context) => const RateYourRide(),
                         )),
                     child: drawerListItem(
                       drawerIconName: Icons.support_agent_rounded,

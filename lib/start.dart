@@ -51,6 +51,8 @@ class startscreen extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {
+                        GetAppMode.ChangeToPassenger();
+
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -76,7 +78,7 @@ class startscreen extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {
-                        GetAppMode.ChangeMode();
+                        GetAppMode.ChangeToDriver();
 
                         Navigator.push(
                             context,
