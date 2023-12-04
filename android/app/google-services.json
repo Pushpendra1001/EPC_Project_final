@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "768435514779",
+    "project_id": "epollutioncontrol-caa2a",
+    "storage_bucket": "epollutioncontrol-caa2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768435514779:android:3400309ee3275561a4053e",
+        "android_client_info": {
+          "package_name": "com.example.epc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCohRvx-xAZlbDC0JetcKMtLQ8UVnWXrjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
